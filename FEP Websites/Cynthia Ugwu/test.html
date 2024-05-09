@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    #page2 {
+    color: aliceblue;
+    width: 100%;
+    padding: 10vw 0;
+}
+
+.elem{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff7e;
+    text-transform: uppercase;
+    padding: 3vw 0;
+}
+
+#third {
+    border-bottom: 1px solid #ffffff7e;
+}
+
+.elem h1 {
+    font-size: 7.4vw;
+    opacity: .6;
+}
+
+.img {
+    /* cursor: pointer; */
+    height: 140%;
+    position: absolute;
+    z-index:999;
+    opacity: 0;
+
+}
+</style>
+<body>
+    <div id="page2">
+        <div class="elem">
+          <img class="img " src="plug.png" alt="plug">
+          <h1>the plug</h1>
+          <p>2024</p>
+        </div>
+        <div class="elem">
+          <img class="img "src="ixperience.png" alt="ixperience">
+          <h1>ixperience</h1>
+          <p>2024</p>
+        </div>
+        <div id="third" class="elem">
+          <img class="img "src="hudu.png" alt="hudu">
+          <h1>hudu</h1>
+          <p>2024</p>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+      <script>
+
+document.querySelectorAll(".elem").forEach(function(elem){
+elem.addEventListener("mousemove",function (dets) {
+    console.log(dets)
+      var diff = dets.clientY - elem.getBoundingClientRect().top;
+     gsap.to(elem.querySelector("img"),{
+    opacity: 1,
+    ease: Power1,
+    top: diff,
+    left: dets.clientX,
+ });
+    });
+   });
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 4vw;
+    background-color: #E3E6F3;
+    box-shadow: 20px 0px 10px rgb(148, 145, 145);
+   
+}
+
+.links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links ul li {
+    list-style: none;
+    position: relative;
+}
+
+.links ul li a {
+    text-decoration: none;
+    padding: 0 1.5vw;
+    color: black;
+    font-family: Roboto Medium;
+    font-size: 15px;
+    transition: 0.1s ease;
+}
+
+.liwnks ul li i {
+    font-size: 1.6vw;
+}
+
+.links ul li a:hover,
+.links ul li a.active {
+    color: seagreen;
+}
+
+.links ul li a.active:after,
+.links ul li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: seagreen;
+    position: absolute;
+    left: 1.5vw;
+    bottom: -3px;
+}
+
+/* hero section */
+
+.hero{
+    background-image: url(./Build-and-Deploy-Ecommerce-Website-main/Build-and-Deploy-Ecommerce-Website-main/img/hero4.png);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    padding: 0 4vw;
+}
+.hero h3{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: rgb(109, 108, 108);
+    padding-bottom: 0.6vw;
+}
+.hero h1{
+    font-size: 3.5vw;
+    font-weight: 500;
+    line-height: 2.9vw;
+    padding-top: 0.9vw;
+    font-family: Ubuntu Medium;
+}
+
+.green{
+    color: seagreen;
+}
+.hero p{
+    padding-top: 1.5vw;
+    color: gray;
+}
+.hero button{
+    background-image: url(./Build-and-Deploy-Ecommerce-Website-main/Build-and-Deploy-Ecommerce-Website-main/img/button.png);
+    background-position: center;
+    background-size: cover;
+    height: 3vw;
+    width: 16vw;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2vw;
+    color: #645e5e;
+    margin-top: 1.5vw;
+}

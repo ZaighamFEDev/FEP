@@ -1,0 +1,47 @@
+
+@font-face {
+    font-family: machina;
+    src: url(659dbdfd5a080be8d348316e_PP\ Neue\ Machina\ Inktrap\ Medium.ttf);
+}
+@font-face {
+    font-family: satoshi;
+    src: url(659dbdfd5a080be8d3483173_Satoshi-Variable.ttf);
+}
+@font-face {
+    font-family: machinal;
+    src: url(659dbdfd5a080be8d348316f_PPNeueMachina_\ Light.ttf);
+}
+*::selection{
+    background-color: #EF9D71;
+}
+.videodiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+body{
+    transition: background-color ease 0.7s;
+}
+
+body[theme="black"]{
+    background-color: black;
+}
+body[theme="black"] .section{
+    color: #fff;
+}
+body[theme="cayn"]{
+    background-color: #AEDEE0;
+}
+body[theme="cayn"] .section{
+    color: #0a0a0a;
+}
+body[theme="salmon"]{
+    background-color: #EF9D71;
+}
+body[theme="salmon"] .section{
+    color: #0a0a0a;
+}
+body[theme="white"]{
+    background-color: #FFFFFF;
+}
+body[theme="white"] .section{
+    color: #0a0a0a;
+}

@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+height: 100vh;
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+.center{
+    height:80%;
+    width: 70%;
+    background-color: gold;
+    position: relative;
+}
+.imagecontainer{
+    height: 100%;
+    width:60%;
+    position: absolute;
+/* background-color: aqua; */
+}
+.imagecontainer img{
+/* position: absolute; */
+height: 100%;
+/* width: 100%; */
+
+}

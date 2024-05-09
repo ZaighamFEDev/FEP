@@ -1,0 +1,251 @@
+@font-face {
+    font-family: abc;
+    src: url(./Freight_Big_Pro/Freight\ Big\ Pro\ Light.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#loader1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #F5E41B;
+    /* background-color: rgba(255, 0, 0, 0.911); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    /* flex-direction: column; */
+}
+
+#loader1 #text1 {
+    font-size: 7vw;
+    line-height: 64px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: -3px;
+    padding-bottom: 6.3vw;
+    font-family: abc;
+    padding-top: 100px;
+    color: white;
+}
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    background-color: #F5E41B;
+    /* background-color: rgba(255, 0, 0, 0.911); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    ;
+    /* flex-direction: column; */
+}
+
+.loader #text1 {
+    font-size: 7vw;
+    line-height: 64px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: -3px;
+    padding-bottom: 6.3vw;
+    font-family: abc;
+    padding-top: 100px;
+    color: white;
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+nav {
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    position: fixed;
+    top: 0;
+}
+
+#left {
+    font-size: 1.2vw;
+    font-weight: 900;
+}
+
+#right {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5vw;
+    font-family: roboto;
+}
+
+#right a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    font-family: abc;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #F5E41B;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    flex-direction: column;
+}
+
+#page1 #text {
+    font-size: 7vw;
+    line-height: 64px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: -3px;
+    padding-bottom: 6.3vw;
+}
+
+#bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    padding-top: 10vw;
+    padding: 2vw 4vw;
+    font-size: 1.4vw;
+}
+
+#bottom i {
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+
+#page2 {
+    /* background-image: url(); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    background-color:black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page2 .elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* display: inline-block; */
+    /* background-color: rgb(63, 16, 233); */
+    width: 100%;
+}
+
+#page2 .elem h1 {
+    font-size: 7vw;
+    font-family: abc;
+    line-height: 70px;
+    font-weight: 100;
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+
+#page2 .elem .moving {
+    white-space: nowrap;
+    font-size: 1.5vw;
+    width: 100%;
+    background-color: #F5E41B;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    /* opacity: 0; */
+    transition: all ease 0.4s;
+    transform: scaleY(0);
+}
+
+#page2 .elem:hover .moving {
+    /* opacity: 1; */
+    transform: scaleY(1);
+    overflow: hidden;
+    padding: 3px 0px;
+}
+
+#page2 .elem .moving .moving-in {
+    display: inline-block;
+    animation: anim 8s 1s infinite linear;
+}
+
+#page2 .elem .moving .moving-in p {
+    opacity: 0;
+    word-spacing: 20px;
+    display: inline-block;
+    transition: all ease 0.4s;
+    transition-delay: 0.2s;
+}
+
+#page2 .elem:hover .moving .moving-in p {
+    opacity: 1;
+}
+#page2 .elem:hover h1{
+    font-style: italic;
+    color: black;
+}
+@keyframes anim {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+.blur{
+    height: 100%;
+    width: 33%;
+    background:linear-gradient(#f5e31bee,#F5E41B,#f5e31bef);
+    box-shadow: 10px 0px 20px 20px #F5E41B,-10px 0px 20px 20px #F5E41B;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+
+
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(4, 53, 53);
+    position: relative;
+}
